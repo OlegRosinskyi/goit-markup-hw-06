@@ -517,11 +517,18 @@
             </li>
           </ul>
         </div>
-        <div>
+        <div class="footer-form">
           <p class="footer-form-title">Підпишиться на розсилку</p>
           <form>
-            <input type="email" value="E-mail" />
-            <button class="footer-btn">
+            <label for="user_email"></label>
+            <input
+              type="email"
+              value="E-mail"
+              name="user_email"
+              id="user_email"
+              class="footer-form-settings"
+            />
+            <button type="submit" class="footer-btn">
               Підписатися
               <span class="footer-icon-send">
                 <svg
@@ -570,8 +577,38 @@
           </svg>-->
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
-        <form>
-          <input type="text" />
+        <form class="modal-form">
+          <label for="user-name">Ім'я</label>
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-form-input"
+          />
+          <label for="user-tel">Телефон</label>
+          <input
+            type="text"
+            name="user-tel"
+            id="user-tel"
+            class="modal-form-input"
+          />
+          <label for="user-mail">Пошта</label>
+          <input
+            type="text"
+            name="user-mail"
+            id="user-mail"
+            class="modal-form-input"
+          />
+          <label for="user-coment">Коментар</label>
+          <input
+            type="text"
+            name="user-coment"
+            id="user-coment"
+            class="modal-form-input"
+          />
+          <label for="user-coment"></label>
+          <input type="text" name="" id="" class="modal-form-input" />
+          <button type="submit">Відправити</button>
         </form>
       </div>
     </div>
