@@ -162,6 +162,13 @@ body {
 .header-link:focus {
   color: var(--accent-color);
 }
+.header-link-activ {
+  color: var(--accent-color);
+}
+.header-link-activ::after {
+  opacity: 1;
+}
+
 .heade-link-communication {
   transition-duration: var(--animation-time);
   transition-property: color;
