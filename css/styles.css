@@ -943,18 +943,25 @@ background-image: ;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
+
 .text-color {
   text-decoration: underline;
   color: var(--modal-text-color);
 }
+.form-icon-checbox-activ {
+  position: absolute;
+  outline: 2px solid blue;
+  fill: var(--select-icon-color);
+  z-index: 0;
+}
 .form-icon-checbox {
   position: absolute;
   outline: 2px solid blue;
+  z-index: 1;
 }
-.form-icon-checbox-activ {
-  fill: var(--select-icon-color);
-  position: absolute;
-  outline: 2px solid blue;
+
+.modal-form-input-chb:checked + .form-icon-checbox-activ {
+  z-index: 1;
 }
 .modal-form-btn {
   display: block;
