@@ -925,6 +925,7 @@ body {
   text-align: left;
 
   color: rgba(117, 117, 117, 0.5);
+  margin-bottom: 20px;
 }
 .modal-form-textarea:focus {
   border: 1px solid #2196f3;
@@ -935,40 +936,39 @@ content: ' ';
 background-image: ;
 }*/
 .modal-form-text-label {
+  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-
-  margin-top: 20px;
 }
 .text-color {
   text-decoration: underline;
   color: var(--modal-text-color);
 }
 .form-icon-checbox {
-  outline: 2px solid red;
+  position: absolute;
+  outline: 2px solid blue;
 }
 .form-icon-checbox-activ {
-  outline: 2px solid red;
+  fill: var(--select-icon-color);
+  position: absolute;
+  outline: 2px solid blue;
 }
 .modal-form-btn {
+  display: block;
   padding: 10px 52px;
-
+  margin-top: 34px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 
-  color: #ffffff;
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-
-  /* identical to box height, or 188% */
-  display: flex;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
