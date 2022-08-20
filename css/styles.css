@@ -936,13 +936,16 @@ body {
 content: ' ';
 background-image: ;
 }*/
+
 .modal-form-text-label {
-  position: relative;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+}
+.modal-form-span {
+  position: relative;
 }
 
 .text-color {
@@ -955,18 +958,19 @@ background-image: ;
   top: 0;
   outline: 2px solid green;
   fill: var(--select-icon-color);
-  z-index: 0;
+  z-index: 1;
 }
 .form-icon-checbox {
   position: absolute;
   left: 0;
   top: 0;
-  outline: 2px solid green;
-  z-index: 1;
+  outline: 2px solid red;
+  z-index: 0;
 }
 
 .modal-form-input-chb:checked + .form-icon-checbox-activ {
   z-index: 2;
+  outline: 2px solid green;
 }
 .modal-form-btn {
   display: block;
