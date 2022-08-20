@@ -5,6 +5,7 @@
   --main-btn-color: #ffffff;
   --second-btn-color: #2196f3;
   --accent-color: #2196f3;
+  --select-icon-color: #2196f3;
   --main-accent-color: #ffffff;
   --s-second-text-color: #ffffff;
   --animation-time: 250ms;
@@ -854,8 +855,36 @@ body {
   visibility: hidden;
   pointer-events: none;
 }
-.modal-form {
+/*-------------------------------------------FORM---------------------------------------------------*/
+/*.modal-form {
+}*/
+
+.modal-form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 42px;
+}
+.modal-form-input:focus {
+  border: 1px solid var(--select-icon-color);
+  outline: none;
+}
+.modal-form-input:focus + .form-icon {
+  fill: var(--select-icon-color);
+}
+
+.modal-form-input-wrap {
   position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  /*transform: translate(-50% -50%);*/
+  outline: 2px solid red;
 }
 .modal-form-data {
   /*font-style: normal;*/
@@ -868,13 +897,6 @@ body {
   color: var(--second-text-color);
   margin-bottom: 4px;
 }
-.modal-form-input {
-  width: 100%;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-bottom: 10px;
-}
 .modal-form-text {
   /*font-style: normal;*/
 
@@ -885,24 +907,35 @@ body {
   letter-spacing: 0.01em;
 
   color: var(--second-text-color);
-  margin-bottom: 4px;
-}
-.modal-form-text-color {
-  color: var(--s-second-text-color);
-}
-.modal-icon {
-  /*position: absolute;
-  left: 0;
-  top: 0;*/
-  outline: 2px solid red;
+  /*margin-bottom: 4px;*/
 }
 
 .modal-form-textarea {
+  padding: 12px 16px;
   width: 100%;
-
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
+.modal-form-textarea:focus {
+  border: 1px solid #2196f3;
+  outline: none;
+}
+/*.modal-form-text-color {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+  color: var(--s-second-text-color);
+}*/
 .modal-form-btn {
   padding: 10px 52px;
 
