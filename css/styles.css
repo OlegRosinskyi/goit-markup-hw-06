@@ -8,7 +8,7 @@
   --select-icon-color: #2196f3;
   --main-accent-color: #ffffff;
   --s-second-text-color: #ffffff;
-  --animation-time: 250ms;
+  --animation-time: 1250ms;
   --main-icon-color: #212121;
   --modal-text-color: #2196f3;
   --animation-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -642,6 +642,9 @@ body {
   margin-left: 10px;
 }
 .footer-btn {
+  transition-duration: var(--animation-time);
+  transition-property: opacity;
+  transition-timing-function: var(--animation-function);
   padding: 10px 62px 10px 28px;
 
   background-color: #2196f3;
@@ -826,12 +829,19 @@ body {
   background-color: #fff;
 }
 .modal-close-btn {
+  transition-duration: var(--animation-time);
+  transition-property: opacity;
+  transition-timing-function: var(--animation-function);
+
   position: absolute;
   right: 10px;
   top: 10px;
   opacity: 1;
 }
 .modal-close-btn-blue {
+  transition-duration: var(--animation-time);
+  transition-property: opacity;
+  transition-timing-function: var(--animation-function);
   position: absolute;
   right: 10px;
   top: 10px;
@@ -877,16 +887,21 @@ body {
 }
 
 .modal-form-input {
+  transition-duration: var(--animation-time);
+  transition-property: border;
+  transition-timing-function: var(--animation-function);
+
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
+  outline: none;
 }
 .modal-form-input:focus {
   border: 1px solid var(--select-icon-color);
-  outline: none;
+  /*utline: none;*/
 }
 .modal-form-input:focus + .form-icon {
   fill: var(--select-icon-color);
@@ -894,11 +909,14 @@ body {
 
 /*.modal-form-input + */
 .form-icon {
+  transition-duration: var(--animation-time);
+  transition-property: fill;
+  transition-timing-function: var(--animation-function);
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-25%);
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
 }
 .modal-form-text {
   /*font-style: normal;*/
@@ -914,6 +932,10 @@ body {
 }
 
 .modal-form-textarea {
+  transition-duration: var(--animation-time);
+  transition-property: border;
+  transition-timing-function: var(--animation-function);
+
   padding: 12px 16px;
   width: 100%;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -928,10 +950,10 @@ body {
 
   color: rgba(117, 117, 117, 0.5);
   margin-bottom: 20px;
+  outline: none;
 }
 .modal-form-textarea:focus {
   border: 1px solid #2196f3;
-  outline: none;
 }
 /*.modal-form-text-chb::before{
 content: ' ';
@@ -967,16 +989,19 @@ background-image: ;
   position: absolute;
   left: -22px;
   top: 0;
-  outline: 2px solid red;
+  /* outline: 2px solid red;*/
   box-shadow: none;
   z-index: 0;
   /* opacity: 1;*/
 }
 .form-icon-checbox-activ {
+  transition-duration: var(--animation-time);
+  transition-property: z-index;
+  transition-timing-function: var(--animation-function);
   position: absolute;
   left: -22px;
   top: 0;
-  outline: 2px solid blue;
+  /* outline: 2px solid blue;*/
   background-color: #fff;
   box-shadow: none;
   /*fill: var(--select-icon-color);*/
@@ -988,6 +1013,10 @@ background-image: ;
   /* outline: 2px solid green;*/
 }
 .modal-form-btn {
+  transition-duration: var(--animation-time);
+  transition-property: opacity;
+  transition-timing-function: var(--animation-function);
+
   display: block;
   padding: 10px 52px;
   margin-top: 34px;
