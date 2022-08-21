@@ -957,7 +957,7 @@ background-image: ;
 
 .form-icon-checbox {
   position: absolute;
-  left: 0;
+  left: -7px;
   top: 0;
   outline: 2px solid red;
   box-shadow: none;
@@ -966,7 +966,7 @@ background-image: ;
 }
 .form-icon-checbox-activ {
   position: absolute;
-  left: 0;
+  left: -7px;
   top: 0;
   outline: 2px solid blue;
   background-color: #fff;
