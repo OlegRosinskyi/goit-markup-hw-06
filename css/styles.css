@@ -862,7 +862,7 @@ body {
 }*/
 .modal-form-data {
   /*font-style: normal;*/
-
+  position: relative;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.7;
@@ -876,7 +876,6 @@ body {
   
 }*/
 .modal-form-input {
-  position: relative;
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -958,7 +957,7 @@ background-image: ;
   left: 0;
   top: 0;
   outline: 2px solid red;
-  background-color: #fff;
+  /* background-color: #fff;*/
   z-index: 0;
   /* opacity: 1;*/
 }
@@ -967,7 +966,7 @@ background-image: ;
   left: 0;
   top: 0;
   outline: 2px solid blue;
-  fill: var(--select-icon-color);
+  /*fill: var(--select-icon-color);*/
   z-index: 0;
   /*opacity: 1;*/
 }
