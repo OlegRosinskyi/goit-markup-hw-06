@@ -957,7 +957,7 @@ background-image: ;
   left: 0;
   top: 0;
   outline: 2px solid red;
-  /* background-color: #fff;*/
+
   z-index: 0;
   /* opacity: 1;*/
 }
@@ -966,6 +966,7 @@ background-image: ;
   left: 0;
   top: 0;
   outline: 2px solid blue;
+  background-color: #fff;
   /*fill: var(--select-icon-color);*/
   z-index: 0;
   /*opacity: 1;*/
