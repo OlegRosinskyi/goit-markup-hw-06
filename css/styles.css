@@ -959,6 +959,7 @@ background-image: ;
   top: 0;
   outline: 2px solid red;
   z-index: 0;
+  opacity: 1;
 }
 .form-icon-checbox-activ {
   position: absolute;
@@ -967,6 +968,7 @@ background-image: ;
   outline: 2px solid blue;
   fill: var(--select-icon-color);
   z-index: 0;
+  opacity: 1;
 }
 .modal-form-input-chb:checked + .form-icon-checbox-activ {
   z-index: 1;
