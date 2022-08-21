@@ -625,7 +625,11 @@ body {
 .footer-form-box {
   display: flex;
 }
-.footer-form-settings {
+.footer-form-input {
+  transition-duration: var(--animation-time);
+  transition-property: border;
+  transition-timing-function: var(--animation-function);
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
@@ -637,6 +641,10 @@ body {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   margin-right: 12px;
+}
+.footer-form-input:focus {
+  border: 1px solid var(--select-icon-color);
+  /*utline: none;*/
 }
 .footer-icon-send {
   margin-left: 10px;
