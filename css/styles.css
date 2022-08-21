@@ -937,27 +937,35 @@ body {
 content: ' ';
 background-image: ;
 }*/
-
+.modal-form-text-label-box {
+  position: relative;
+}
 .modal-form-text-label {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding: 16px;
+  padding: 30px;
 }
 .modal-form-span {
   position: relative;
 }
 
 .text-color {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  letter-spacing: 0.03em;
+  color: var(--second-text-color);
+  padding: 4px;
   text-decoration: underline;
   color: var(--modal-text-color);
 }
 
 .form-icon-checbox {
   position: absolute;
-  left: -7px;
+  left: -22px;
   top: 0;
   outline: 2px solid red;
   box-shadow: none;
@@ -966,7 +974,7 @@ background-image: ;
 }
 .form-icon-checbox-activ {
   position: absolute;
-  left: -7px;
+  left: -22px;
   top: 0;
   outline: 2px solid blue;
   background-color: #fff;
