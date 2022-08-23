@@ -986,14 +986,18 @@ body {
 
 .modal-form-text-label-box {
   position: relative;
+  margin-top: 20px;
 }
 .modal-form-text-label {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 30px;
 }
 .modal-form-span {
   position: relative;
@@ -1005,16 +1009,31 @@ body {
   line-height: 1.71px;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  padding: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+
   text-decoration: underline;
+
   color: var(--modal-text-color);
+  /*position: relative;*/
 }
+/*.text-color ::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: inline-block;
+  background-color: var(--accent-color);
+  height: 4px;
+  width: 100%;
+  border-radius: 10px;
+}*/
 
 .form-icon-checbox {
   position: absolute;
-  left: -22px;
-  top: 0;
-  /* outline: 2px solid red;*/
+  left: 14px;
+  top: 100%;
+  outline: 2px solid red;
   box-shadow: none;
   z-index: 0;
   /* opacity: 1;*/
@@ -1024,9 +1043,9 @@ body {
   transition-property: z-index;
   transition-timing-function: var(--animation-function);
   position: absolute;
-  left: -22px;
-  top: 0;
-  /* outline: 2px solid blue;*/
+  left: 14px;
+  top: 100%;
+  outline: 2px solid blue;
   background-color: #fff;
   box-shadow: none;
   /*fill: var(--select-icon-color);*/
