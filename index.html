@@ -645,35 +645,38 @@
               </svg>
             </span>
           </div>
-          <label class="modal-form-text" for="feedback"> Коментар </label>
-          <textarea
-            name="feedback"
-            rows="5"
-            class="modal-form-textarea"
-            placeholder="Введіть текст"
-            id="feedback"
-          ></textarea>
-
-          <div class="modal-form-text-label-box">
-            <span class="modal-form-span">
-              <input
-                type="checkbox"
-                name="user-consent"
-                value="true"
-                class="modal-form-input-chb visually-hidden"
-                id="user-consent"
-              />
-              <svg class="form-icon-checbox" width="16" height="15">
-                <use href="./images/icons.svg.svg#icon-icon-check"></use>
-              </svg>
-              <svg class="form-icon-checbox-activ" width="16" height="15">
-                <use href="./images/icons.svg.svg#icon-BorderCheck"></use>
-              </svg>
-            </span>
-            <label class="modal-form-text-label" for="user-consent">
-              Погоджуюся з розсилкою та приймаю<span class="text-color"
-                >Умови договору</span
-              >
+          <div class="modal-form-textarea-box">
+            <label class="modal-form-text" for="feedback"> Коментар </label>
+            <textarea
+              name="feedback"
+              rows="5"
+              class="modal-form-textarea"
+              placeholder="Введіть текст"
+              id="feedback"
+            ></textarea>
+          </div>
+          <div class="modal-form-checkbox-box">
+            <label class="modal-form-text-label">
+              <span class="modal-form-span">
+                <input
+                  type="checkbox"
+                  name="user-consent"
+                  value="true"
+                  class="modal-form-input-chb visually-hidden"
+                  id="user-consent"
+                />
+                <svg class="form-icon-checbox" width="16" height="15">
+                  <use href="./images/icons.svg.svg#icon-icon-check"></use>
+                </svg>
+                <svg class="form-icon-checbox-activ" width="16" height="15">
+                  <use href="./images/icons.svg.svg#icon-BorderCheck"></use>
+                </svg>
+                <span class="checbox-text">
+                  Погоджуюся з розсилкою та приймаю<span class="checbox-text-color"
+                    >Умови договору</span
+                  ></span
+                >
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-form-btn">Відправити</button>
